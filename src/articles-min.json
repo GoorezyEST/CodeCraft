@@ -1,0 +1,22 @@
+{
+  "articles": [
+    {
+      "title": "Carta 3D CSS",
+      "img": "https://i.imgur.com/IVkHAER.png",
+      "alt": "Photo related to the article",
+      "description": "Descubre cómo dar vida a tus proyectos con solo HTML y CSS al crear un impresionante efecto 3D al pasar el cursor sobre una carta. ¡Haz clic aquí para aprender más y darle un toque especial a tus diseños!",
+      "date": "15 / 1 / 2023",
+      "tipo": "css",
+      "link": "/3d-css-carta"
+    },
+    {
+      "title": "i18n Básico React",
+      "img": "https://i.imgur.com/X9Wfi0K.png",
+      "alt": "Photo related to the article",
+      "description": "Aprende a utilizar i18n en tus aplicacion de React para que estas obtengan un mayor alcance teniendo la propiedad de poseer multiples lenguages. ¡Haz click aqui y aprende como!",
+      "date": "16 / 1 / 2023",
+      "tipo": "code",
+      "link": "/i18n-react"
+    }
+  ]
+}

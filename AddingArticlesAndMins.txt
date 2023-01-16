@@ -1,0 +1,41 @@
+Articulos JSON :
+
+    {
+      "NombreArticulo": [
+        { "title": "TITULO" },
+        {
+          "NUMERO": [
+            {
+              "text": "TEXTO"
+            },
+            {
+              "link": "ENLACE"
+            },
+            {
+              "code": {
+                "language": "LENGUAJE",
+                "code": "CODIGO EN STRING CON \n"
+              }
+            },
+            {
+              "img": {
+                "src": "SOURCE",
+                "alt": "TEXTO ALTERNATIVO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+
+MiniArticulos JSON :
+
+    {
+      "title": "TITULO",
+      "img": "SOURCE",
+      "alt": "TEXTO ALTERNATIVO",
+      "description": "DESCRIPCION",
+      "date": "FECHA",
+      "tipo": "TIPO (css/code)",
+      "link": "LINK AL ARTICULO"
+    }

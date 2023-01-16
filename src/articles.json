@@ -1,0 +1,110 @@
+{
+  "articles": [
+    {
+      "cardHover": [
+        { "title": "Carta 3D CSS" },
+        {
+          "1": [
+            {
+              "text": "Bienvenidos a todos a este tutorial en el que aprenderemos a crear un efecto 3D sobre un contenedor al pasar el cursor por encima de el, en este caso utilizaremos una carta. Este efecto se consigue tan solo utilizando HTML y CSS.\nA continuacion comenzaremos con la explicacion. Pero antes, si quieres ver una demo de este efecto puedes hacer click debajo y verlo en mi galeria CSS."
+            },
+            {
+              "link": "https://goorezy-css-gallery.netlify.app/gallery/card-hover-3d"
+            },
+            {
+              "text": "Empezemos con el codigo HTML, este se basa en el contenedor principal (container) el cual cumple la funcion de contener dentro de el todo el contenido del efecto. Por otro lado tenemos el contenedor en el que implementaremos el efecto, el cual es un <div> que contiene dentro 9 <span>, cada uno de ellos ocupara un 33% del espacio total del contenedor, permitiendo asi que dependiendo en que span se haga hover la carta genere un efecto de perspectiva 3D inclinandose hacia el lado en donde el cursor esta posicionado. Por ultimo un <div> el cual brindara los estilos que se quieran aplicar a el contenedor como tambien si asi lo desea un contenido dentro de el, en este caso sera un simple texto con el nombre del efecto."
+            },
+            {
+              "code": {
+                "language": "html",
+                "code": "<section className='container'>\n<div class='card'>\n<div class='card-box-wrap'>\n<span class='over'></span>\n<span class='over'></span>\n<span class='over'></span>\n<span class='over'></span>\n<span class='over'></span>\n<span class='over'></span>\n<span class='over'></span>\n<span class='over'></span>\n<span class='over'></span>\n<div class='card-box'>\n<strong>\n3D Card\n<br />\nHover Effect\n</strong>\n</div>\n</div>\n</div>\n</section>"
+              }
+            },
+            {
+              "text": "A continuacion veremos la explicacion del codigo CSS, iremos por parte para poder abordarlo correctamente y brindar claridad sobre la funcionalidad de cada estilo. Primero tendremos el container, el cual permitira un buen posicionamiento de el contenedor del efecto, ademas utilizaremos la clase card-box-wrap para indicar el tamañano, duracion de transicion y agregar la perspectiva que brindara mas calidad al efecto. Por otro lado veamos el estilo de card-box, en este fijamos la altura y ancho para que cubra todo el contendor, y le agregamos los estilos deseados que posea el anteriormente mencionado, por ejemplo el background-image para brindar un fondo con textura. No olvides aplicar el preserve-3d en este estilo."
+            },
+            {
+              "code": {
+                "language": "css",
+                "code": ".container {\n height: 100vh;\n background: radial-gradient(rgb(35, 35, 35), rgb(0, 0, 0));\n display: flex;\n align-items: center;\n justify-content: center;\n}\n.card-box-wrap {\n width: 300px;\n height: 400px;\n position: relative;\n transition: all 0.6s ease-out;\n border-radius: 1rem;\n perspective: 1000px;\n}\n.card-box-wrap:hover {\n transition: all 0.3s linear;\n transform: scale(1.05);\n}\n.card-box {\n width: 100%;\n height: 100%;\n background-image: url(url-here);\n background-position: center;\n border-radius: 1rem;\n background-size: cover;\n position: relative;\n display: flex;\n align-items: center;\njustify-content: space-around;\ntext-align: center;\nfont-size: 1.25rem;\nfont-weight: 700;\ntransition: all 0.6s ease-out;\ntransform: rotateX(0deg) rotateY(0deg);\nperspective: 1000px;\ntransform-style: preserve-3d;\n}\n.card-box strong {\ntransform: translateZ(40px);\nbackground: radial-gradient(rgb(35, 35, 35), rgb(0, 0, 0));\npadding: 0.75rem;\nborder-radius: 1rem;\ncolor: rgb(255, 255, 255);\n-webkit-user-select: none;\n-ms-user-select: none;\nuser-select: none;\n}"
+              }
+            },
+            {
+              "text": "Ahora veamos la parte mas interesante, la que permite conseguir nuestro efecto que son los estilos de over. Este, como mencionamos anteriormente ocupara un 33% del contenedor, y asi cada uno ocupara una parte de este de forma equitativa. Luego aprovechando nth-chil, posicionamos cada uno en la posicion deseada, utilizando los atributos top y left. Luego el efecto como tal a traves del hover sobre cada over se lograra con un transform indicando hacia donde se debe inclinar la carta, y asi consiguiendo el efecto de perspectiva en 3D. Por ultimo te enseñare la media query para que este efecto sea responsivo, aunque recuerda que si tu contenedor tiene dimensiones distintas, o contenido distinto, esto no te servira y deberas aplicar tus propias media querys."
+            },
+            {
+              "code": {
+                "language": "css",
+                "code": ".over {\n  width: 33.333%;\n  height: 33.333%;\n  position: absolute;\n  z-index: 1;\n}\n.over:nth-child(1) {\n  left: 0;\n  top: 0;\n}\n.over:nth-child(2) {\n  left: 33.333%;\n  top: 0;\n}\n.over:nth-child(3) {\n  left: 66.666%;\n  top: 0;\n}\n.over:nth-child(4) {\n  left: 0;\n  top: 33.333%;\n}\n.over:nth-child(5) {\n  left: 33.333%;\n  top: 33.333%;\n}\n.over:nth-child(6) {\n  left: 66.666%;\n  top: 33.333%;\n}\n.over:nth-child(7) {\n  left: 0;\n  top: 66.666%;\n}\n.over:nth-child(8) {\n  left: 33.333%;\n  top: 66.666%;\n}\n.over:nth-child(9) {\n  left: 66.666%;\n  top: 66.666%;\n}\n.over:nth-child(1):hover ~ .card-box {\n  transform: rotateX(-20deg) rotateY(20deg);\n}\n.over:nth-child(2):hover ~ .card-box {\n  transform: rotateX(-20deg) rotateY(0deg);\n}\n.over:nth-child(3):hover ~ .card-box {\n  transform: rotateX(-20deg) rotateY(-20deg);\n}\n.over:nth-child(4):hover ~ .card-box {\n  transform: rotateX(0deg) rotateY(20deg);\n}\n.over:nth-child(5):hover ~ .card-box {\n  transform: rotateX(0deg) rotateY(0deg);\n}\n.over:nth-child(6):hover ~ .card-box {\n  transform: rotateX(0deg) rotateY(-20deg);\n}\n.over:nth-child(7):hover ~ .card-box {\n  transform: rotateX(20deg) rotateY(20deg);\n}\n.over:nth-child(8):hover ~ .card-box {\n  transform: rotateX(20deg) rotateY(0deg);\n}\n.over:nth-child(9):hover ~ .card-box {\ntransform: rotateX(20deg) rotateY(-20deg);\n}\n@media screen and (max-width: 370px) {\n.card-box-wrap {\nwidth: 200px;\nheight: 300px;\n}\n.card-box strong {\npadding: 0.5rem;\nborder-radius: 1rem;\ncolor: rgb(255, 255, 255);\n}\n.card-box {\nfont-size: 1rem;\n}\n}"
+              }
+            },
+            {
+              "text": "En resumen, en este articulo hemos aprendido cómo crear un efecto 3D sobre un contenedor al pasar el cursor por encima de él utilizando solo HTML y CSS. Hemos visto cómo utilizar el contenedor principal para contener todo el contenido del efecto, el uso de la perspectiva y transformaciones para lograr el efecto deseado y cómo hacer que el efecto sea responsivo utilizando Media Queries. Este efecto es una excelente forma de añadir interacción y dinamismo a tu sitio web y espero que este tutorial haya sido útil en tu aprendizaje."
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "i18nReact": [
+        { "title": "i18n Básico React" },
+        {
+          "1": [
+            {
+              "text": "i18n es un acrónimo de 'Internationalization', que en español significa 'Internacionalización'. Se refiere a la práctica de desarrollar software de tal manera que pueda ser utilizado en diferentes idiomas y regiones del mundo sin necesidad de modificar el código fuente.\nEsto se logra mediante la separación del texto y los elementos de la interfaz de usuario de la lógica del programa, permitiendo que estos sean fácilmente traducidos y adaptados a diferentes idiomas. i18n es esencial para crear aplicaciones y sitios web que sean accesibles para una audiencia global y que puedan adaptarse a diferentes culturas y idiomas."
+            },
+            {
+              "text": "Para comenzar a utilizar i18n en ReactJS lo primero que debemos hacer es intalarlo:"
+            },
+            {
+              "code": {
+                "language": "js",
+                "code": "npm install i18next react-i18next"
+              }
+            },
+            {
+              "text": "Ahora, mi recomendacion, es que crees un archivo auxiliar el cual almacenara la configuracion de i18n para luego utilizarla en los componentes de tu aplicacion que desees, en este deberemos importar las librerias e inicializar i18n con la configuracion que necesitemos, en este ejemplo usaremos ingles y español."
+            },
+            {
+              "code": {
+                "language": "js",
+                "code": "import i18next from 'i18next';\nimport { initReactI18next } from 'react-i18next';\n\ni18next.use(initReactI18next).init({\n resources: {\n  en: {\n   translation: {\n    'key': 'Hello World'\n   }  \n},\n  es: {\n   translation: {\n    'key': 'Hola Mundo'\n   }\n  }\n },\n lng:'en',\n fallbackLng: 'en',\n});"
+              }
+            },
+            {
+              "text": "Como consiguiente deberemos envolver nuestra aplicacion React con el componente 'I18nextProvider' proporcionado por react-i18next:"
+            },
+            {
+              "code": {
+                "language": "js",
+                "code": "import { I18nextProvider } from 'react-i18next';\n\nconst App = () => {\nreturn (\n<I18nextProvider i18n={i18next}>\n{/* Tu aplicación aquí */}\n</I18nextProvider>\n);\n};"
+              }
+            },
+            {
+              "text": "¿Como utilizaremos i18n en nuestra aplicacion? Pues en realidad es algo sumamente sencillo deberemos, en el componente en el cual queramos utilizarlo implementar la funcion 't' para traducir el texto."
+            },
+            {
+              "code": {
+                "language": "js",
+                "code": "import { useTranslation } from 'react-i18next';\n\nconst MyComponent = () => {\nconst { t } = useTranslation();\nreturn <h1>{t('key')}</h1>;\n};"
+              }
+            },
+            {
+              "text": "Otra parte importante que debes querer saber es como cambiar el idioma de nuestra aplicacion, esto lo lograremos mediante la funcion i18next.changeLanguage('lang'), donde el parametro 'lang' se refiere al lenguaje al que deseas cambiar tu aplicacion."
+            },
+            {
+              "code": {
+                "language": "js",
+                "code": "i18next.changeLanguage('es')"
+              }
+            },
+            {
+              "text": "Espero que esto te ayude a comenzar a utilizar i18n en tu aplicacion de React. Ten en cuenta que hay muchas mas configuraciones por lo que te recomiendo revisar la documentacion de i18next y react-i18next para obtener más información."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
