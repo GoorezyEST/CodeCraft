@@ -92,8 +92,17 @@ body::-webkit-scrollbar-thumb {
   font-weight: 800;
 }
 
-.article p {
+.text_container {
   width: 85%;
+  color: var(--text-color);
+}
+
+.text_container h3 {
+  font-size: 1.25rem;
+  text-align: start;
+}
+
+.text_container p {
   font-size: 1rem;
   color: var(--text-color);
   font-weight: 500;
@@ -177,10 +186,16 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.5rem;
   }
 
-  .article p {
+  .text_container {
     width: 95%;
+  }
+
+  .text_container h3 {
+    font-size: 1rem;
+  }
+
+  .text_container p {
     font-size: 0.85rem;
-    text-align: justify;
   }
 
   .article img {
@@ -214,10 +229,12 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.25rem;
   }
 
-  .article p {
-    width: 95%;
+  .text_container h3 {
+    font-size: 0.75rem;
+  }
+
+  .text_container p {
     font-size: 0.6rem;
-    text-align: justify;
   }
 
   .article a {
@@ -259,10 +276,12 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.15rem;
   }
 
-  .article p {
-    width: 95%;
+  .text_container h3 {
+    font-size: 0.75rem;
+  }
+
+  .text_container p {
     font-size: 0.5rem;
-    text-align: justify;
   }
 
   .article a {
