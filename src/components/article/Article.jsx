@@ -10,9 +10,6 @@ const Article = ({ jsonObject }) => {
       <Link to="../" className="return">
         <IoIosArrowBack className="return-icon" />
       </Link>
-      <div className="header">
-        <h1>CodeCraft</h1>
-      </div>
       <div className="article">
         {jsonObject.map((item, index) => {
           console.log(jsonObject);
