@@ -76,7 +76,7 @@ body::-webkit-scrollbar-thumb {
 .article h1 {
   font-size: 1.75rem;
   color: var(--primary-color);
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .text_container {
@@ -90,6 +90,7 @@ body::-webkit-scrollbar-thumb {
   color: var(--primary-color);
   opacity: 0.75;
   margin-bottom: 0.15rem;
+  font-weight: 600;
 }
 
 .text_container p {
@@ -97,6 +98,9 @@ body::-webkit-scrollbar-thumb {
   color: var(--text-color);
   font-weight: 500;
   text-align: justify;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
 }
 
 .article a {
@@ -104,11 +108,11 @@ body::-webkit-scrollbar-thumb {
   color: var(--sidebar-color);
   text-decoration: none;
   font-size: 1.15rem;
-  font-weight: 700;
+  font-weight: 600;
   padding: 0.5rem 1.5rem;
   border-radius: 1rem;
   transition: var(--tran-02);
-  border: 2px solid var(--sidebar-color);
+  border: 1px solid var(--sidebar-color);
 }
 
 .article a:hover {

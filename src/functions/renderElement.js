@@ -11,8 +11,8 @@ const renderElement = (item) => {
     );
   } else if (item.hasOwnProperty("link")) {
     return (
-      <a href={item.link} target="_blank" rel="noopener noreferrer">
-        Vamonos
+      <a href={item.link.link} target="_blank" rel="noopener noreferrer">
+        {item.link.title}
       </a>
     );
   } else if (item.hasOwnProperty("img")) {

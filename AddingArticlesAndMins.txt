@@ -6,10 +6,16 @@ Articulos JSON :
         {
           "NUMERO": [
             {
-              "text": "TEXTO"
+              "text": {
+                "title": "HTML",
+                "text": "Empezemos con el codigo HTML, este se basa en el contenedor principal (container) el cual cumple la funcion de contener dentro de el todo el contenido del efecto. Por otro lado tenemos el contenedor en el que implementaremos el efecto, el cual es un <div> que contiene dentro 9 <span>, cada uno de ellos ocupara un 33% del espacio total del contenedor, permitiendo asi que dependiendo en que span se haga hover la carta genere un efecto de perspectiva 3D inclinandose hacia el lado en donde el cursor esta posicionado. Por ultimo un <div> el cual brindara los estilos que se quieran aplicar a el contenedor como tambien si asi lo desea un contenido dentro de el, en este caso sera un simple texto con el nombre del efecto."
+              }
             },
             {
-              "link": "ENLACE"
+              "link": {
+                "title": "Vamonos",
+                "link": "https://goorezy-css-gallery.netlify.app/gallery/card-hover-3d"
+              }
             },
             {
               "code": {

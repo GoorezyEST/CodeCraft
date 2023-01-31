@@ -17,6 +17,10 @@ function App() {
           path="/i18n-react"
           element={<Article jsonObject={arts.articles[1].i18nReact} />}
         />
+        <Route
+          path="/meta-tag-favs"
+          element={<Article jsonObject={arts.articles[2].metaTagFav} />}
+        />
       </Routes>
     </BrowserRouter>
   );

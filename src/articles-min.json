@@ -17,6 +17,15 @@
       "date": "16 / 1 / 2023",
       "tipo": "code",
       "link": "/i18n-react"
+    },
+    {
+      "title": "Etiquetas meta y favicons",
+      "img": "https://i.imgur.com/dewhXet.png",
+      "alt": "Photo related to the article",
+      "description": "Etiquetas meta basicas para incrementar el SEO de tu sitio web. Y una forma sencilla de como generar tus favicons facil y rapido. ¡Haz click aqui para ver más!",
+      "date": "31 / 1 / 2023",
+      "tipo": "code",
+      "link": "/meta-tag-favs"
     }
   ]
 }
