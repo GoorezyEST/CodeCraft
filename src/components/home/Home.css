@@ -5,6 +5,7 @@
   justify-content: flex-start;
   align-items: center;
   background-color: var(--body-color);
+  padding-bottom: 2rem;
 }
 
 .home_content {
