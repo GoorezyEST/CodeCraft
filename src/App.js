@@ -21,6 +21,12 @@ function App() {
           path="/meta-tag-favs"
           element={<Article jsonObject={arts.articles[2].metaTagFav} />}
         />
+        <Route
+          path="/pd-singleton"
+          element={
+            <Article jsonObject={arts.articles[3].dessignPatterSingleton} />
+          }
+        />
       </Routes>
     </BrowserRouter>
   );

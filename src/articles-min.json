@@ -26,6 +26,15 @@
       "date": "31 / 1 / 2023",
       "tipo": "code",
       "link": "/meta-tag-favs"
+    },
+    {
+      "title": "Singleton",
+      "img": "https://i.imgur.com/IyNxjX9.png",
+      "alt": "Photo related to the article",
+      "description": "Un patrón de diseño que permite restringir la creación de objetos pertenecientes a una clase o el valor de un tipo a un único objeto. ¡Aprende singleton!",
+      "date": "09 / 2 / 2023",
+      "tipo": "code",
+      "link": "/pd-singleton"
     }
   ]
 }

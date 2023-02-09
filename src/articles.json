@@ -196,6 +196,64 @@
           ]
         }
       ]
+    },
+
+    {
+      "dessignPatterSingleton": [
+        { "title": "Singleton" },
+        {
+          "1": [
+            {
+              "text": {
+                "title": "General",
+                "text": "Haga que la clase del objeto de instancia única sea responsable de la creación, la inicialización, el acceso y la aplicación.\nDeclare la instancia como miembro de datos estáticos privados.\nProporcione una función miembro pública estática que encapsule todo el código de inicialización y proporcione acceso a la instancia.\n\nEl cliente llama a la función de acceso (usando el nombre de clase y el operador de resolución de alcance) siempre que se requiere una referencia a la instancia única.\n\nEl patron singleton debe usarse solo en caso de que los siguientes 3 criterios se cumplan :\n• La propiedad de la instancia única no se puede asignar razonablemente.\n• La inicializacion floja (lazy initialization) es deseable.\n• El acceso global no está previsto de otro modo.\n\nEl patrón Singleton se puede ampliar para admitir el acceso a un número de instancias específico de la aplicación."
+              }
+            },
+            {
+              "text": {
+                "title": "Estructura",
+                "text": "Haga que la clase de la instancia única sea responsable del acceso y la 'inicialización en el primer uso'.\nLa instancia única es un atributo estático privado. La función de acceso es un método estático público."
+              }
+            },
+            {
+              "img": {
+                "src": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5ad68f0a-a83b-45f2-b40a-50d6c3bd9af9/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230209%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230209T203324Z&X-Amz-Expires=86400&X-Amz-Signature=a37a9cdbdb785a56c85eb19cabf17986ec193626c6a7a63a569e18d0e69b4563&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject",
+                "alt": "Singletone Structure Example"
+              }
+            },
+            {
+              "text": {
+                "title": "Ejemplo",
+                "text": "El patrón Singleton asegura que una clase tenga solo una instancia y proporciona un punto de acceso global a esa instancia.\nLleva el nombre del conjunto singleton, que se define como un conjunto que contiene un elemento.\nLa oficina del presidente de los Estados Unidos es un Singleton.\nLa Constitución de los Estados Unidos especifica los medios por los cuales se elige a un presidente, limita la duración del cargo y define el orden de sucesión.\nComo resultado, puede haber como máximo un presidente activo en un momento dado.\nIndependientemente de la identidad personal del presidente activo, el título 'El presidente de los Estados Unidos' es un punto de acceso global que identifica a la persona en el cargo."
+              }
+            },
+            {
+              "img": {
+                "src": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/34044fa0-674d-40fb-a7f9-31851d8d061a/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230209%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230209T203632Z&X-Amz-Expires=86400&X-Amz-Signature=d6b987b9eb087e6383767af649c3007219e5c107383946167b4165fc7af0a649&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject",
+                "alt": "Singletone Image Example"
+              }
+            },
+            {
+              "text": {
+                "title": "Reconocer uso",
+                "text": "La aplication necesita una, y solo una, instancia de un objeto.\nAdicionalmente, la inicializacion diferida (lazy initializacion) y el acceso global son necesarios."
+              }
+            },
+            {
+              "link": {
+                "title": "Ejemplo GitHub",
+                "link": "https://github.com/GoorezyEST/PD_Singletone/blob/main/Program.cs"
+              }
+            },
+            {
+              "text": {
+                "title": "Conclusión",
+                "text": "En este articulo aprendimos como y cuando usar el patron de diseño Singleton.\nDesde una descripcion general del mismo, hasta un ejemplo en un repositorio de GitHub.\nEspero que te haya gustado este articulo, ten en cuenta que si quieres información más detallada sobre los patrones de diseño puedes leer el libro 'Design Patterns' de 'The gang of Four'."
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
