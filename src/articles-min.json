@@ -35,6 +35,15 @@
       "date": "09 / 2 / 2023",
       "tipo": "code",
       "link": "/pd-singleton"
+    },
+    {
+      "title": "Factory",
+      "img": "https://i.imgur.com/7VPuann.png",
+      "alt": "Photo related to the article",
+      "description": "El patron factory consiste en utilizar una clase constructora abstracta con unos cuantos métodos definidos y otro abstracto. ¡Click aqui para ver!",
+      "date": "10 / 2 / 2023",
+      "tipo": "code",
+      "link": "/pd-factory"
     }
   ]
 }

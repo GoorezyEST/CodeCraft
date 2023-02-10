@@ -27,6 +27,12 @@ function App() {
             <Article jsonObject={arts.articles[3].dessignPatterSingleton} />
           }
         />
+        <Route
+          path="/pd-factory"
+          element={
+            <Article jsonObject={arts.articles[4].dessignPatterFactory} />
+          }
+        />
       </Routes>
     </BrowserRouter>
   );

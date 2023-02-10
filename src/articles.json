@@ -254,6 +254,63 @@
           ]
         }
       ]
+    },
+    {
+      "dessignPatterFactory": [
+        { "title": "Factory" },
+        {
+          "1": [
+            {
+              "text": {
+                "title": "General",
+                "text": "El patron factory es para crear objetos como e implementar un algoritmo.\nUna superclase especifica todo el comportamiento estándar y genérico, y luego delega los detalles de creación a las subclases que proporciona el cliente.\n\nfactory hace que un diseño sea más personalizable y solo un poco más complicado.\nOtros patrones de diseño requieren nuevas clases, mientras que factory solo requiere una nueva operación.\n\nLa gente a menudo usa factory como la forma estándar de crear objetos; pero no es necesario si: la clase de la que se crea una instancia nunca cambia, o la instancia se lleva a cabo en una operación que las subclases pueden anular fácilmente."
+              }
+            },
+            {
+              "text": {
+                "title": "Estructura",
+                "text": "Una definición cada vez más popular de método de factory es:\nUn método estático de una clase que devuelve un objeto del tipo de esa clase.\nPero a diferencia de un constructor, el objeto real que devuelve podría ser una instancia de una subclase.\nA diferencia de un constructor, se puede reutilizar un objeto existente, en lugar de crear un nuevo objeto.\nA diferencia de un constructor, los métodos de factory pueden tener nombres diferentes y más descriptivos.\nEl cliente está totalmente desvinculado de los detalles de implementación de las clases derivadas.\nLa creación polimórfica ahora es posible."
+              }
+            },
+            {
+              "img": {
+                "src": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a6a50607-2d7f-461c-8265-4afbb972cf99/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230210%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230210T202646Z&X-Amz-Expires=86400&X-Amz-Signature=ab05fdf841a677501c6c843271b73e215d5fa99a12902c82f940d037d0463dea&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject",
+                "alt": "Factory Image Example"
+              }
+            },
+            {
+              "text": {
+                "title": "Ejemplo",
+                "text": "Factory define una interfaz para crear objetos, pero permite que las subclases decidan qué clases instanciar.\nLas prensas de moldeo por inyección demuestran este patrón.\nLos fabricantes de juguetes de plástico procesan polvo de moldeo de plástico e inyectan el plástico en moldes de las formas deseadas.\nLa clase de juguete (automóvil, figura de acción, etc.) está determinada por el molde."
+              }
+            },
+            {
+              "img": {
+                "src": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1adc2b17-9c8c-42ee-ae56-4617d1fb441e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230210%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230210T203129Z&X-Amz-Expires=86400&X-Amz-Signature=d98244a4e6784c752793ab57575323178354d5cc97c680d7fca2fe7b804a5e54&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject",
+                "alt": "Factory Image Example"
+              }
+            },
+            {
+              "text": {
+                "title": "Reconocer uso",
+                "text": "Un framework debe estandarizar la arquitectura de modelo para una variedad de aplicaciones, pero permitir a las aplicaciones individuales definir sus propio objetos y prever su instanciacion."
+              }
+            },
+            {
+              "link": {
+                "title": "Ejemplo GitHub",
+                "link": "https://github.com/GoorezyEST/PD_Factory"
+              }
+            },
+            {
+              "text": {
+                "title": "Conclusión",
+                "text": "En este articulo aprendimos como y cuando usar el patron de diseño Factory.\nDesde una descripcion general del mismo, hasta un ejemplo en un repositorio de GitHub.\nEspero que te haya gustado este articulo, ten en cuenta que si quieres información más detallada sobre los patrones de diseño puedes leer el libro 'Design Patterns' de 'The gang of Four'."
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
