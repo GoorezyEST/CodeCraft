@@ -263,6 +263,10 @@
   .home_content_article {
     width: 90%;
   }
+
+  .home_container {
+    padding-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 500px) {

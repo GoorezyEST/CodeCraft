@@ -217,7 +217,7 @@
             },
             {
               "img": {
-                "src": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5ad68f0a-a83b-45f2-b40a-50d6c3bd9af9/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230209%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230209T203324Z&X-Amz-Expires=86400&X-Amz-Signature=a37a9cdbdb785a56c85eb19cabf17986ec193626c6a7a63a569e18d0e69b4563&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject",
+                "src": "https://i.imgur.com/AfYkhke.png",
                 "alt": "Singletone Structure Example"
               }
             },
@@ -229,7 +229,7 @@
             },
             {
               "img": {
-                "src": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/34044fa0-674d-40fb-a7f9-31851d8d061a/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230209%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230209T203632Z&X-Amz-Expires=86400&X-Amz-Signature=d6b987b9eb087e6383767af649c3007219e5c107383946167b4165fc7af0a649&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject",
+                "src": "https://i.imgur.com/qMC1Q72.png",
                 "alt": "Singletone Image Example"
               }
             },
@@ -274,7 +274,7 @@
             },
             {
               "img": {
-                "src": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a6a50607-2d7f-461c-8265-4afbb972cf99/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230210%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230210T202646Z&X-Amz-Expires=86400&X-Amz-Signature=ab05fdf841a677501c6c843271b73e215d5fa99a12902c82f940d037d0463dea&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject",
+                "src": "https://i.imgur.com/7tSd1Ln.png",
                 "alt": "Factory Image Example"
               }
             },
@@ -286,7 +286,7 @@
             },
             {
               "img": {
-                "src": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1adc2b17-9c8c-42ee-ae56-4617d1fb441e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230210%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230210T203129Z&X-Amz-Expires=86400&X-Amz-Signature=d98244a4e6784c752793ab57575323178354d5cc97c680d7fca2fe7b804a5e54&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject",
+                "src": "https://i.imgur.com/TIcvPjQ.png",
                 "alt": "Factory Image Example"
               }
             },

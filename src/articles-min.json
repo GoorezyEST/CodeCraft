@@ -29,7 +29,7 @@
     },
     {
       "title": "Singleton",
-      "img": "https://i.imgur.com/IyNxjX9.png",
+      "img": "https://i.imgur.com/wk8YZKU.png",
       "alt": "Photo related to the article",
       "description": "Un patrón de diseño que permite restringir la creación de objetos pertenecientes a una clase o el valor de un tipo a un único objeto. ¡Aprende singleton!",
       "date": "09 / 2 / 2023",
@@ -38,7 +38,7 @@
     },
     {
       "title": "Factory",
-      "img": "https://i.imgur.com/7VPuann.png",
+      "img": "https://i.imgur.com/NqY6SIe.png",
       "alt": "Photo related to the article",
       "description": "El patron factory consiste en utilizar una clase constructora abstracta con unos cuantos métodos definidos y otro abstracto. ¡Click aqui para ver!",
       "date": "10 / 2 / 2023",
