@@ -33,6 +33,12 @@ function App() {
             <Article jsonObject={arts.articles[4].dessignPatterFactory} />
           }
         />
+        <Route
+          path="/pd-abstract-factory"
+          element={
+            <Article jsonObject={arts.articles[5].dessignPatterAbsFactory} />
+          }
+        />
       </Routes>
     </BrowserRouter>
   );

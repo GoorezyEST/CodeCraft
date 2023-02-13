@@ -263,7 +263,7 @@
             {
               "text": {
                 "title": "General",
-                "text": "El patron factory es para crear objetos como e implementar un algoritmo.\nUna superclase especifica todo el comportamiento estándar y genérico, y luego delega los detalles de creación a las subclases que proporciona el cliente.\n\nfactory hace que un diseño sea más personalizable y solo un poco más complicado.\nOtros patrones de diseño requieren nuevas clases, mientras que factory solo requiere una nueva operación.\n\nLa gente a menudo usa factory como la forma estándar de crear objetos; pero no es necesario si: la clase de la que se crea una instancia nunca cambia, o la instancia se lleva a cabo en una operación que las subclases pueden anular fácilmente."
+                "text": "El patron factory es para crear objetos e implementar un algoritmo.\nUna superclase especifíca todo el comportamiento estándar y genérico, y luego delega los detalles de creación a las subclases que proporciona el cliente.\n\nFactory hace que un diseño sea más personalizable y solo un poco más complicado.\nOtros patrones de diseño requieren nuevas clases, mientras que factory solo requiere una nueva operación.\n\nLa gente a menudo usa factory como la forma estándar de crear objetos; pero no es necesario si: la clase de la que se crea una instancia nunca cambia, o la instancia se lleva a cabo en una operación que las subclases pueden anular fácilmente."
               }
             },
             {
@@ -306,6 +306,63 @@
               "text": {
                 "title": "Conclusión",
                 "text": "En este articulo aprendimos como y cuando usar el patron de diseño Factory.\nDesde una descripcion general del mismo, hasta un ejemplo en un repositorio de GitHub.\nEspero que te haya gustado este articulo, ten en cuenta que si quieres información más detallada sobre los patrones de diseño puedes leer el libro 'Design Patterns' de 'The gang of Four'."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "dessignPatterAbsFactory": [
+        { "title": "Abstract Factory" },
+        {
+          "1": [
+            {
+              "text": {
+                "title": "General",
+                "text": "Proporcione un nivel de indirección que abstraiga la creación de familias de objetos relacionados o dependientes sin especificar directamente sus clases concretas.\n\nEl objeto 'fábrica' tiene la responsabilidad de proporcionar servicios de creación para toda la familia de plataformas. Los clientes nunca crean objetos de plataforma directamente, le piden a la fábrica que lo haga por ellos.\n\nEste mecanismo facilita el intercambio de familias de productos porque la clase específica del objeto de fábrica aparece solo una vez en la aplicación, donde se instancia.\nLa aplicación puede reemplazar al por mayor toda la familia de productos simplemente instanciando una instancia concreta diferente de la fábrica abstracta.\n\nDebido a que el servicio proporcionado por el objeto de fábrica es tan generalizado, se implementa de manera rutinaria como Singleton."
+              }
+            },
+            {
+              "text": {
+                "title": "Estructura",
+                "text": "Abstract factory define un método de fábrica por producto. Cada metodo fábrica encapsula el nuevo operador y las clases de productos concretas y específicas de la plataforma.\nLuego, cada 'plataforma' se modela con una clase derivada de fábrica."
+              }
+            },
+            {
+              "img": {
+                "src": "https://i.imgur.com/pkNM43W.png",
+                "alt": "Abstract Factory Image Example"
+              }
+            },
+            {
+              "text": {
+                "title": "Ejemplo",
+                "text": "El propósito de Abstract Factory es proporcionar una interfaz para crear familias de objetos relacionados, sin especificar clases concretas.\nUn ejemplo podemos verlo en el equipo de estampado de láminas de metal utilizado en la fabricación de automóviles japoneses. El equipo de estampado es una Fábrica Abstracta que crea piezas de carrocería.\nLa misma maquinaria se utiliza para estampar puertas derechas, izquierdas, guardabarros delantero derecho, guardabarros delantero izquierdo, capotas, etc. para diferentes modelos de automóviles.\nMediante el uso de rodillos para cambiar los troqueles de estampado, las clases de hormigón producidas por la maquinaria se pueden cambiar en tres minutos."
+              }
+            },
+            {
+              "img": {
+                "src": "https://i.imgur.com/4Bhp0fm.png",
+                "alt": "Factory Image Example"
+              }
+            },
+            {
+              "text": {
+                "title": "Reconocer uso",
+                "text": "Si una aplicación va a ser portátil, debe encapsular las dependencias de la plataforma. Estas 'plataformas' pueden incluir: sistema de ventanas, sistema operativo, base de datos, etc.\nCon demasiada frecuencia, esta encapsulación no está diseñada de antemano y muchas declaraciones de casos #ifdef con opciones para todas las plataformas admitidas actualmente comienzan a procrear como conejos a lo largo del código."
+              }
+            },
+            {
+              "link": {
+                "title": "Ejemplo GitHub",
+                "link": "https://github.com/GoorezyEST/PD_AbstractFactory"
+              }
+            },
+            {
+              "text": {
+                "title": "Conclusión",
+                "text": "En este articulo aprendimos como y cuando usar el patron de diseño Abstract Factory.\nDesde una descripcion general del mismo, hasta un ejemplo en un repositorio de GitHub.\nEspero que te haya gustado este articulo, ten en cuenta que si quieres información más detallada sobre los patrones de diseño puedes leer el libro 'Design Patterns' de 'The gang of Four'."
               }
             }
           ]

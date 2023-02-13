@@ -44,6 +44,15 @@
       "date": "10 / 2 / 2023",
       "tipo": "code",
       "link": "/pd-factory"
+    },
+    {
+      "title": "Abstract factory",
+      "img": "https://i.imgur.com/8uDHU1i.png",
+      "alt": "Photo related to the article",
+      "description": "Abstract Factory es un patrón de diseño creacional que resuelve el problema de crear familias enteras de productos sin especificar sus clases concretas. ¡Ver aqui!",
+      "date": "13 / 2 / 2023",
+      "tipo": "code",
+      "link": "/pd-abstract-factory"
     }
   ]
 }
