@@ -53,6 +53,15 @@
       "date": "13 / 2 / 2023",
       "tipo": "code",
       "link": "/pd-abstract-factory"
+    },
+    {
+      "title": "Prototype",
+      "img": "https://i.imgur.com/TwQftzR.png",
+      "alt": "Photo related to the article",
+      "description": "El patrón de diseño prototipo tiene como finalidad crear nuevos objetos clonando una instancia creada previamente. Para aprenderlo haz click aqui",
+      "date": "15 / 2 / 2023",
+      "tipo": "code",
+      "link": "/pd-prototype"
     }
   ]
 }

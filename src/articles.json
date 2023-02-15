@@ -368,6 +368,63 @@
           ]
         }
       ]
+    },
+    {
+      "dessignPatterPrototype": [
+        { "title": "Prototype" },
+        {
+          "1": [
+            {
+              "text": {
+                "title": "General",
+                "text": "Declare una clase base abstracta que especifique un método de 'clon'.\nEntonces, el cliente, en lugar de escribir código que invoque el operador 'new' en un nombre de clase fijo, llama a una operación de 'clon' en la clase base abstracta, proporcionando una cadena o tipo de datos enumerados que designa la clase derivada concreta deseada."
+              }
+            },
+            {
+              "text": {
+                "title": "Estructura",
+                "text": "La fábrica sabe como encontrar el prototipo correcto, y cada producto sabe como generar nuevas instancias de si mismo."
+              }
+            },
+            {
+              "img": {
+                "src": "https://i.imgur.com/K9vfYvh.png",
+                "alt": "Photo related to the structure of the Prototype"
+              }
+            },
+            {
+              "text": {
+                "title": "Ejemplo",
+                "text": "El patron prototipo especifica el tipo de objetos a crear usando una instancia prototípica.\n\nLos prototipos de nuevos productos son a menos construidos antes de estar en produccion, pero en este ejemplo el prototipo es pasivo y no participa en la copia de si mismo.\n\nLa mitosis de las celulas - resultando en dos celulas identicas - es un ejemplo de un prototipo que cumple un rol activo en copiarse a si mismo. Este es un ejemplo del patron prototipo."
+              }
+            },
+            {
+              "img": {
+                "src": "https://i.imgur.com/KNwxRJT.png",
+                "alt": "Photo related to the example of the Prototype"
+              }
+            },
+            {
+              "text": {
+                "title": "Reconocer uso",
+                "text": "Utiliza el patrón Prototype cuando tu código no deba depender de las clases concretas de objetos que necesites copiar. Esto sucede a menudo cuando tu código funciona con objetos pasados por código de terceras personas a través de una interfaz."
+              }
+            },
+            {
+              "link": {
+                "title": "Ejemplo GitHub",
+                "link": "https://github.com/GoorezyEST/PD_Prototype/blob/main/Program.cs"
+              }
+            },
+            {
+              "text": {
+                "title": "Conclusión",
+                "text": "En este articulo aprendimos como y cuando usar el patron de diseño Prototype.\nDesde una descripcion general del mismo, hasta un ejemplo en un repositorio de GitHub.\nEspero que te haya gustado este articulo, ten en cuenta que si quieres información más detallada sobre los patrones de diseño puedes leer el libro 'Design Patterns' de 'The gang of Four'."
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }

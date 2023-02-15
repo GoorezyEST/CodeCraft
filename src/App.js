@@ -39,6 +39,12 @@ function App() {
             <Article jsonObject={arts.articles[5].dessignPatterAbsFactory} />
           }
         />
+        <Route
+          path="/pd-prototype"
+          element={
+            <Article jsonObject={arts.articles[6].dessignPatterPrototype} />
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
