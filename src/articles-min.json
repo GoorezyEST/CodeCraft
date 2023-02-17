@@ -62,6 +62,15 @@
       "date": "15 / 2 / 2023",
       "tipo": "code",
       "link": "/pd-prototype"
+    },
+    {
+      "title": "Facade",
+      "img": "https://i.imgur.com/YkB10vp.png",
+      "alt": "Photo related to the article",
+      "description": "El patrón de diseño facade esta motivado por la necesidad de estructurar un entorno de programación y reducir su complejidad con la división en subsistemas, minimizando las comunicaciones y dependencias entre estos.",
+      "date": "17 / 2 / 2023",
+      "tipo": "code",
+      "link": "/pd-facade"
     }
   ]
 }

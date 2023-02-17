@@ -425,6 +425,63 @@
           ]
         }
       ]
+    },
+    {
+      "dessignPatterFacade": [
+        { "title": "Facade" },
+        {
+          "1": [
+            {
+              "text": {
+                "title": "General",
+                "text": "El patron facade analiza la encapsulación de un subsistema complejo dentro de un solo objeto de interfaz.\nEsto reduce la curva de aprendizaje necesaria para aprovechar con éxito el subsistema.\nTambién promueve el desacoplamiento del subsistema de sus muchos clientes potenciales.\nPor otro lado, si la fachada es el único punto de acceso para el subsistema, limitará las funciones y la flexibilidad que pueden necesitar los 'usuarios avanzados'.\n\nEl objeto facade debe ser un facilitador bastante simple. No debe convertirse en un oráculo que todo lo sabe o en un objeto 'dios'."
+              }
+            },
+            {
+              "text": {
+                "title": "Estructura",
+                "text": "La fachada toma un “acertijo envuelto en un enigma rodeado de misterio”, e intercala un envoltorio que doma la masa amorfa e inescrutable de software.\nVeamos un ejemplo en el que: el “subsystemOne” y “subsystemThree” no interactuan con los componentes internos del “subsystemTwo”."
+              }
+            },
+            {
+              "img": {
+                "src": "https://i.imgur.com/7n5gHkd.png",
+                "alt": "Photo related to the structure of the Prototype"
+              }
+            },
+            {
+              "text": {
+                "title": "Ejemplo",
+                "text": "La fachada define una interfaz unificada de nivel superior para un subsistema que facilita su uso.\nLos consumidores se encuentran con facade cuando ordenan de un catálogo.\nEl consumidor llama a un número y habla con un representante de servicio al cliente.\nEl representante de servicio al cliente actúa como una fachada, proporcionando una interfaz para el departamento de cumplimiento de pedidos, el departamento de facturación y el departamento de envío."
+              }
+            },
+            {
+              "img": {
+                "src": "https://i.imgur.com/YPZApZc.png",
+                "alt": "Photo related to the example of the Prototype"
+              }
+            },
+            {
+              "text": {
+                "title": "Reconocer uso",
+                "text": "Un segmento de la comunidad de clientes necesita una interfaz simplificada para la funcionalidad general de un subsistema complejo."
+              }
+            },
+            {
+              "link": {
+                "title": "Ejemplo GitHub",
+                "link": "https://github.com/GoorezyEST/PD_Facade"
+              }
+            },
+            {
+              "text": {
+                "title": "Conclusión",
+                "text": "En este articulo aprendimos como y cuando usar el patron de diseño Facade.\nDesde una descripcion general del mismo, hasta un ejemplo en un repositorio de GitHub.\nEspero que te haya gustado este articulo, ten en cuenta que si quieres información más detallada sobre los patrones de diseño puedes leer el libro 'Design Patterns' de 'The gang of Four'."
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -45,6 +45,12 @@ function App() {
             <Article jsonObject={arts.articles[6].dessignPatterPrototype} />
           }
         />
+        <Route
+          path="/pd-facade"
+          element={
+            <Article jsonObject={arts.articles[7].dessignPatterFacade} />
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
