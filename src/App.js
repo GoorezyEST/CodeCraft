@@ -51,6 +51,20 @@ function App() {
             <Article jsonObject={arts.articles[7].dessignPatterFacade} />
           }
         />
+        <Route
+          path="/hearth-css"
+          element={<Article jsonObject={arts.articles[8].cssHearth} />}
+        />
+        <Route
+          path="/hearth-css"
+          element={<Article jsonObject={arts.articles[8].cssHearth} />}
+        />
+        <Route
+          path="/pd-decorator"
+          element={
+            <Article jsonObject={arts.articles[9].dessignPatterDecorator} />
+          }
+        />
       </Routes>
     </BrowserRouter>
   );

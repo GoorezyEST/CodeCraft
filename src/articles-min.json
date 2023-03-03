@@ -71,6 +71,24 @@
       "date": "17 / 2 / 2023",
       "tipo": "code",
       "link": "/pd-facade"
+    },
+    {
+      "title": "Corazón pulsante CSS",
+      "img": "https://i.imgur.com/VgSN3LE.png",
+      "alt": "Photo related to the article",
+      "description": "En este articulo podras aprender a hacer un efecto muy sencillo pero atractivo, se trata de un corazón el cual posee una animación de pulsacion. ¡Haz click para ver más!",
+      "date": "26 / 2 / 2023",
+      "tipo": "css",
+      "link": "/hearth-css"
+    },
+    {
+      "title": "Decorator",
+      "img": "https://i.imgur.com/GKPqCE2.png",
+      "alt": "Photo related to the article",
+      "description": "Nos permite no tener que crear sucesivas clases que hereden de la primera incorporando la nueva funcionalidad, sino otras que la implementan y se asocian a la primera.",
+      "date": "3 / 3 / 2023",
+      "tipo": "code",
+      "link": "/pd-decorator"
     }
   ]
 }

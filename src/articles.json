@@ -55,7 +55,7 @@
             },
             {
               "text": {
-                "title": "Conclusion",
+                "title": "Conclusión",
                 "text": "En resumen, en este articulo hemos aprendido cómo crear un efecto 3D sobre un contenedor al pasar el cursor por encima de él utilizando solo HTML y CSS.\nHemos visto cómo utilizar el contenedor principal para contener todo el contenido del efecto, el uso de la perspectiva y transformaciones para lograr el efecto deseado y cómo hacer que el efecto sea responsivo utilizando Media Queries.\nEste efecto es una excelente forma de añadir interacción y dinamismo a tu sitio web y espero que este tutorial haya sido útil en tu aprendizaje."
               }
             }
@@ -137,7 +137,7 @@
             },
             {
               "text": {
-                "title": "Conclusion",
+                "title": "Conclusión",
                 "text": "Espero que esto te ayude a comenzar a utilizar i18n en tu aplicacion de React.\nTen en cuenta que hay muchas mas configuraciones por lo que te recomiendo revisar la documentacion de i18next y react-i18next para obtener más información."
               }
             }
@@ -477,6 +477,144 @@
               "text": {
                 "title": "Conclusión",
                 "text": "En este articulo aprendimos como y cuando usar el patron de diseño Facade.\nDesde una descripcion general del mismo, hasta un ejemplo en un repositorio de GitHub.\nEspero que te haya gustado este articulo, ten en cuenta que si quieres información más detallada sobre los patrones de diseño puedes leer el libro 'Design Patterns' de 'The gang of Four'."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cssHearth": [
+        { "title": "Corazón palpitante CSS" },
+        {
+          "1": [
+            {
+              "text": {
+                "title": "HTML del corazón",
+                "text": "Esta animación se logra de una forma extremadamente sencilla, lo unico que necesitaremos en HTML sera una etiqueta div ¿Solo eso? Asi es, con tan solo un div aprovechando sus pseudo-elementos after y before lograremos el efecto deseado."
+              }
+            },
+            {
+              "code": {
+                "language": "html",
+                "code": "<div className=\"hearth\"> </div>"
+              }
+            },
+            {
+              "text": {
+                "title": "CSS Básico",
+                "text": "Veamos la primera parte de CSS para nuestro corazon, en esta manipularemos nuestro div para darle los estilos que necesitamos para que se consiga el efecto esperado.\n\nLo que haremos sera especificar su tamaño y color, asi como tambien le daremos cierta luz de fondo para lograr un mejor efecto de profundidad a la hora de que el corazón use la animación de palpitar."
+              }
+            },
+            {
+              "code": {
+                "language": "css",
+                "code": ".hearth {\n\theight: 80px;\n\twidth: 80px;\n\tbackground-color: rgb(221, 39, 124);\n\tposition: relative;\n\ttransform: rotate(45deg);\n\tbox-shadow: -10px 10px 90px rgb(221, 39, 124);\n\tanimation: hearthAnim 1.05s linear infinite;\n}"
+              }
+            },
+            {
+              "text": {
+                "title": "CSS Pseudo-elementos",
+                "text": "Ahora toca darle forma a nuestro corazón, esto lo haremos utilizando los pseudo-elementos before y after de nuestro div.\nA estos le asignaremos el mismo color y tamaño que tiene nuestro div, y aprovechando una posicion absoluta y posicionamiento podremos colocarlo en las zonas que necesitamos, por ultimo, con un border radius nuestro corazon estara terminado.\nPero aún falta la animación para que este completo."
+              }
+            },
+            {
+              "code": {
+                "language": "css",
+                "code": ".hearth::before {\n\tcontent: \"\";\n\tposition: absolute;\n\theight: 80px;\n\twidth: 80px;\n\tbackground-color: rgb(221, 39, 124);\n\ttop: -40px;\n\tborder-radius: 50px;\n\tbox-shadow: -10px 10px 90px rgb(221, 39, 124);\n}\n\n.hearth::after {\n\tcontent: \"\";\n\tposition: absolute;\n\theight: 80px;\n\twidth: 80px;\n\tbackground-color: rgb(221, 39, 124);\n\tright: -40px;\n\tborder-radius: 50px;\n\tbox-shadow: -10px 10px 90px rgb(221, 39, 124);\n}"
+              }
+            },
+            {
+              "text": {
+                "title": "CSS Animación",
+                "text": "Por ultimo veamos la animación para que nuestro efecto este completo, esta se basa en un simple transform que da la impresion de que nuestro corazón esta \"palpitando\"."
+              }
+            },
+            {
+              "code": {
+                "language": "css",
+                "code": "@keyframes hearthAnim {\n\t0% {\n\t\ttransform: rotate(-45deg) scale(1.075);\n\t}\n\t70% {\n\t\ttransform: rotate(-45deg) scale(1);\n\t}\n\t100% {\n\t\ttransform: rotate(-45deg) scale(1.075);\n\t}\n}"
+              }
+            },
+            {
+              "text": {
+                "title": "CSS Completo",
+                "text": "Ahora veamos todo el archivo CSS que implementariamos en caso de querer conseguir este efecto, asi como tambien debajo tendrás un boton con el cual podras ver un ejemplo de como este efecto se ve, para asi decidir si hacerlo o no."
+              }
+            },
+            {
+              "code": {
+                "language": "css",
+                "code": ".hearth {\n\theight: 80px;\n\twidth: 80px;\n\tbackground-color: rgb(221, 39, 124);\n\tposition: relative;\n\ttransform: rotate(45deg);\n\tbox-shadow: -10px 10px 90px rgb(221, 39, 124);\n\tanimation: hearthAnim 1.05s linear infinite;\n}\n\n.hearth::before {\n\tcontent: \"\";\n\tposition: absolute;\n\theight: 80px;\n\twidth: 80px;\n\tbackground-color: rgb(221, 39, 124);\n\ttop: -40px;\n\tborder-radius: 50px;\n\tbox-shadow: -10px 10px 90px rgb(221, 39, 124);\n}\n\n.hearth::after {\n\tcontent: \"\";\n\tposition: absolute;\n\theight: 80px;\n\twidth: 80px;\n\tbackground-color: rgb(221, 39, 124);\n\tright: -40px;\n\tborder-radius: 50px;\n\tbox-shadow: -10px 10px 90px rgb(221, 39, 124);\n}\n\n@keyframes hearthAnim {\n\t0% {\n\t\ttransform: rotate(-45deg) scale(1.075);\n\t}\n\t70% {\n\t\ttransform: rotate(-45deg) scale(1);\n\t}\n\t100% {\n\t\ttransform: rotate(-45deg) scale(1.075);\n\t}\n}"
+              }
+            },
+            {
+              "link": {
+                "title": "Ver efecto",
+                "link": "https://goorezy-css-gallery.netlify.app/gallery/hearth-pulse"
+              }
+            },
+            {
+              "text": {
+                "title": "Conclusión",
+                "text": "En conclusión en este articulo aprendimos a crear un simple efecto con animación en CSS, en el cual aprovechamos los pseudo-elementos para lograr la forma de un corazon el cual luego simulamos que palpita con una animación que utiliza el atributo transform para brindar el efecto. Espero que este articulo le haya servido, y pueda implementar este efecto en su propio contexto."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "dessignPatterDecorator": [
+        { "title": "Decorator" },
+        {
+          "1": [
+            {
+              "text": {
+                "title": "General",
+                "text": "El patrón Decorator responde a la necesidad de añadir dinámicamente funcionalidad a un Objeto. Esto nos permite no tener que crear sucesivas clases que hereden de la primera incorporando la nueva funcionalidad, sino otras que la implementan y se asocian a la primera.\n\nEl decorador adjunta dinámicamente responsabilidades adicionales a un objeto. Los adornos que se añaden a los pinos o abetos son ejemplos de decoradores. Se pueden agregar luces, guirnaldas, bastones de caramelo, adornos de vidrio, etc., a un árbol para darle un aspecto festivo. Los adornos no cambian el árbol en sí mismo, que es reconocible como un árbol de Navidad, independientemente de los adornos particulares que se utilicen. Como ejemplo de funcionalidad adicional, la adición de luces permite \"encender\" un árbol de Navidad."
+              }
+            },
+            {
+              "text": {
+                "title": "Estructura",
+                "text": "El cliente siempre esta interesado en coreFunction.doThis().\nEl cliente puede, o no, estar interesado en optional.doThis() y optional.doThisOther().\nCada una de estas clases siempre delegara al decorador base, y esta clase siempre delegara al objeto “wrapper”."
+              }
+            },
+            {
+              "img": {
+                "src": "https://i.imgur.com/CvvmZcr.png",
+                "alt": "Decorator image structure"
+              }
+            },
+            {
+              "text": {
+                "title": "Ejemplo",
+                "text": "Un arma de asalto es un arma letal por si misma. Pero puedes aplicarle ciertos “decoradores” para hacerla mas precisa, silenciosa y devastadora."
+              }
+            },
+            {
+              "img": {
+                "src": "https://i.imgur.com/wulm7pf.png",
+                "alt": "Decorator image example"
+              }
+            },
+            {
+              "text": {
+                "title": "Reconocer uso",
+                "text": "Quieres agregar comportamientos o estados a objetos individuales en tiempo de ejecucion.\nLa herencia no es factible porque es estatica y se aplica a una clase entera."
+              }
+            },
+            {
+              "link": {
+                "title": "Ejemplo GitHub",
+                "link": "https://github.com/GoorezyEST/PD_Decorator"
+              }
+            },
+            {
+              "text": {
+                "title": "Conclusión",
+                "text": "En este articulo aprendimos como y cuando usar el patron de diseño Decorator.\nDesde una descripcion general del mismo, hasta un ejemplo en un repositorio de GitHub.Espero que te haya gustado este articulo, ten en cuenta que si quieres información más detallada sobre los patrones de diseño puedes leer el libro 'Design Patterns' de 'The gang of Four'."
               }
             }
           ]
