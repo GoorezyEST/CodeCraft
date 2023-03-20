@@ -89,6 +89,15 @@
       "date": "3 / 3 / 2023",
       "tipo": "code",
       "link": "/pd-decorator"
+    },
+    {
+      "title": "Proxy",
+      "img": "https://i.imgur.com/CTTfsv8.png",
+      "alt": "Photo related to the article",
+      "description": "El patrón Proxy es un patrón estructural que tiene como propósito proporcionar un subrogado o intermediario de un objeto para controlar su acceso. ¡Click para ver más!",
+      "date": "19 / 3 / 2023",
+      "tipo": "code",
+      "link": "/pd-proxy"
     }
   ]
 }

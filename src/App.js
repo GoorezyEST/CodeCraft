@@ -65,6 +65,12 @@ function App() {
             <Article jsonObject={arts.articles[9].dessignPatterDecorator} />
           }
         />
+        <Route
+          path="/pd-proxy"
+          element={
+            <Article jsonObject={arts.articles[10].dessignPatterProxy} />
+          }
+        />
       </Routes>
     </BrowserRouter>
   );

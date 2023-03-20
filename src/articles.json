@@ -614,7 +614,64 @@
             {
               "text": {
                 "title": "Conclusión",
-                "text": "En este articulo aprendimos como y cuando usar el patron de diseño Decorator.\nDesde una descripcion general del mismo, hasta un ejemplo en un repositorio de GitHub.Espero que te haya gustado este articulo, ten en cuenta que si quieres información más detallada sobre los patrones de diseño puedes leer el libro 'Design Patterns' de 'The gang of Four'."
+                "text": "En este articulo aprendimos como y cuando usar el patron de diseño Decorator.\nDesde una descripcion general del mismo, hasta un ejemplo en un repositorio de GitHub. Espero que te haya gustado este articulo, ten en cuenta que si quieres información más detallada sobre los patrones de diseño puedes leer el libro 'Design Patterns' de 'The gang of Four'."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "dessignPatterProxy": [
+        { "title": "Proxy" },
+        {
+          "1": [
+            {
+              "text": {
+                "title": "General",
+                "text": "Diseñe un objeto sustituto, o proxy, que: Instancia el objeto real la primera vez que el cliente realiza una solicitud del proxy, recuerda la identidad de este objeto real y reenvía la solicitud instigadora a este objeto real. Luego, todas las solicitudes posteriores simplemente se reenvían directamente al objeto real encapsulado."
+              }
+            },
+            {
+              "text": {
+                "title": "Estructura",
+                "text": "Veamos un ejemplo de su estructura, al definir una interfaz Subject, la presencia del objeto Proxy estando en el lugar de RealSubject es transparente para el cliente."
+              }
+            },
+            {
+              "img": {
+                "src": "https://i.imgur.com/4prQ7Y9.png",
+                "alt": "Proxy image structure"
+              }
+            },
+            {
+              "text": {
+                "title": "Ejemplo",
+                "text": "El Proxy provee un sustituto que provee accesso a un objeto.\nUn cheque es un Proxy para fondos en una cuenta. Un cheque puede ser utilizado en lugar de dinero para hacer compras y tambien controlar el acceso al dinero en la cuenta del propietario."
+              }
+            },
+            {
+              "img": {
+                "src": "https://i.imgur.com/dxrkgKn.png",
+                "alt": "Proxy image example"
+              }
+            },
+            {
+              "text": {
+                "title": "Reconocer uso",
+                "text": "La causa más común en la que utilizaremos este patrón sera cuando se necesita admitir objetos que consumen muchos recursos y no desea crear instancias de dichos objetos a menos y hasta que el cliente realmente los solicite."
+              }
+            },
+            {
+              "link": {
+                "title": "Ejemplo GitHub",
+                "link": "https://github.com/GoorezyEST/PD_Proxy"
+              }
+            },
+            {
+              "text": {
+                "title": "Conclusión",
+                "text": "En este articulo aprendimos como y cuando usar el patron de diseño Proxy.\nDesde una descripcion general del mismo, hasta un ejemplo en un repositorio de GitHub. Espero que te haya gustado este articulo, ten en cuenta que si quieres información más detallada sobre los patrones de diseño puedes leer el libro 'Design Patterns' de 'The gang of Four'."
               }
             }
           ]
